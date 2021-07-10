@@ -1,0 +1,28 @@
+use LockdownLearning
+create table employee1(
+Emp_id int,
+Emp_Name varchar(20),
+Address varchar(30),
+Gender varchar(20),
+);
+select * from employee1
+
+insert into employee1 values
+(2,'sundram','sultanpur','male');
+insert into employee1 values
+(6,'priya','Lucknow','Female');
+insert into employee1 values
+(7,'Aman','Raibarelly','Male');
+update employee1 set Emp_id=4 where Emp_Name='pratiksha'
+delete employee1 where Emp_id=3
+
+
+select * from employee1 where Emp_id=6 or Emp_id=7
+select * from employee1 where Emp_Name='priya'
+select top 3 Emp_id from employee1
+
+select * from employee1 order by Emp_id desc
+select * from employee1
+alter table employee1 add salery int
+alter table employee1 alter column Emp_Name varchar(20)
+alter table employee1 drop column salery
